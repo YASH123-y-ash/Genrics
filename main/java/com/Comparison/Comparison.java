@@ -38,7 +38,18 @@ public class Comparison {
             max = z;//here max is z now
         }
         return max;
+    }
 
+    // generic method to determine the greatest of comparable objects.
+    public static <T extends Comparable<T>> T maximum(T x, T y, T z) {
+        T max = x;//initially assume x is the largest element
+        if(y.compareTo(max) > 0) {
+            max = y;//here max is y
+        }
+        if(z.compareTo(max) > 0) {
+            max = z;//here max is z now
+        }
+        return max;
     }
 
 

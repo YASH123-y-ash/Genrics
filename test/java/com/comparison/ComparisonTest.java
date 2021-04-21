@@ -33,4 +33,12 @@ public class ComparisonTest {
         System.out.println(max);
         Assertions.assertEquals("Yash",max);
     }
+
+    @Test
+    public void givenStringObjectGenericMethodShouldReturnMax()
+    {
+        String max = Comparison.maximum("yash","wadhan","asdf");
+        System.out.println(max);
+        Assertions.assertEquals("yash",max);
+    }
 }
