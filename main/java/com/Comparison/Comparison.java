@@ -22,6 +22,5 @@ public class Comparison {
         Integer xInt  = 41, yInt = 521, zInt = 68;
         Integer max =  new Comparison().largest (xInt,yInt,zInt);
         System.out.println("The largest is "+max);
-       
     }
 }
