@@ -18,10 +18,19 @@ public class ComparisonTest {
 
     @Test
     // UC2-to validate given three float value gives maximum return true
-    public void givenFloatObjectShouldReturnMax()
+    public void givenFloatObject_ShouldReturnMax()
     {
         float max = Comparison.largest(4.5f,4.6f,4.7f);
         System.out.println(max);
         Assertions.assertEquals(4.7f,max);
+    }
+
+    @Test
+    // UC3-to validate given three String value gives maximum return true
+    public void givenStringObject_ShouldReturnMax()
+    {
+        String max = Comparison.maximum("Yash","Wardhan","Qweef");
+        System.out.println(max);
+        Assertions.assertEquals("Yash",max);
     }
 }

@@ -27,6 +27,17 @@ public class Comparison {
             max = z;//here max is z now
         }
         return max;
+    }
+
+    public static String maximum(String x, String y, String z) {
+        String max = x;//initially assume x is the largest element
+        if(y.compareTo(max) > 0) {
+            max = y;//here max is y
+        }
+        if(z.compareTo(max) > 0) {
+            max = z;//here max is z now
+        }
+        return max;
 
     }
 
@@ -38,6 +49,8 @@ public class Comparison {
         Float xFloat  = 4.4f, yFloat =4.5f, zFloat = 4.6f;
         Float max1 =  new Comparison().largest(xFloat,yFloat,zFloat);
         System.out.println("The maximum  Element is "+max);
-       
+        String xString = "Yash",yString = "Wardhan",zString = "Qzaxa";
+        String max2 = new Comparison().maximum(xString,yString,zString);
+        System.out.println(max);
     }
 }
