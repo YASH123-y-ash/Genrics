@@ -1,6 +1,13 @@
 package com.Comparison;
 
-public class Comparison {
+public class Comparison<T extends Comparable<T>> {
+
+    T x,y,z;
+    public Comparison(T x, T y, T z) {
+        this.x = x;
+        this.y = y;
+        this.z = z;
+    }
 
     public Comparison() {
 
@@ -51,7 +58,9 @@ public class Comparison {
         }
         return max;
     }
-
+    public T maximum(){
+        return Comparison.maximum(x,y,z);
+    }
 
     public static void main(String[] args) {
         Integer xInt  = 41, yInt = 521, zInt = 68;
