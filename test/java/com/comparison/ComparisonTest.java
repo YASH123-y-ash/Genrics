@@ -15,4 +15,13 @@ public class ComparisonTest {
         int max = comparison.largest(45,24,98);
         Assertions.assertEquals(98,max);
     }
+
+    @Test
+    // UC2-to validate given three float value gives maximum return true
+    public void givenFloatObjectShouldReturnMax()
+    {
+        float max = Comparison.largest(4.5f,4.6f,4.7f);
+        System.out.println(max);
+        Assertions.assertEquals(4.7f,max);
+    }
 }
